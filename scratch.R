@@ -10,3 +10,8 @@ setwd("z:/rPerfFunc")
 document()
 
 install_github('rPerfFunc','cquigley')
+
+#cquigley@CQ MINGW64 ~
+#  $ git init Z:/git/rPerfFunc
+#Reinitialized existing Git repository in Z:/git/rPerfFunc/.git/
+  
