@@ -5,8 +5,12 @@
 \title{force round to 2 decimals}
 \usage{
 forceround2(n)
+
+forceround2(n)
 }
 \description{
 force round to 2 decimals
+
+replace NAs
 }
 

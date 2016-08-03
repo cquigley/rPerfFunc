@@ -5,8 +5,12 @@
 \title{force round to 1 decimals}
 \usage{
 forceround1(n)
+
+forceround1(n)
 }
 \description{
+force round to 1 decimals
+
 force round to 1 decimals
 }
 
