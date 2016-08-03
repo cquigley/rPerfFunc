@@ -52,15 +52,19 @@ rounder <- function(x, digits = 2) format(round(x, digits), nsmall = digits)
 forceround2= function(n) (sprintf("%.2f", as.numeric(n)))
 
 #' force round to 1 decimals
+#' @export
 forceround1= function(n) (sprintf("%.1f", as.numeric(n)))
 
 #' force round to 0 decimals
+#' @export
 forceround0= function(n) (sprintf("%.0f", as.numeric(n)))
 
 #' round to n number of digits, 2 by default
+#' @export
 rounder <- function(x, digits = 2) format(round(x, digits), nsmall = digits)
 
 #' replace NAs
+#' @export
 naplace <- function(df, repl = 0){
   df2 = apply(df, 2, function(x) {x[is.na(x)] <- repl; x})
   reclass(df2, df)
