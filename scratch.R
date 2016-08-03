@@ -1,5 +1,5 @@
 # install.packages("devtools")
-# library("devtools")
+ library("devtools")
 # devtools::install_github("klutometis/roxygen")
 # library(roxygen2)
 
@@ -9,4 +9,4 @@
 setwd("z:/rPerfFunc")
 document()
 
-#install_github('rPerfFunc','cquigley')
+install_github('rPerfFunc','cquigley')
