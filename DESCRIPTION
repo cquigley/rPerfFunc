@@ -4,7 +4,7 @@ Version: 0.0.1
 Authors@R: person("Christopher", "Quigley", email = "cquigley@outlook.com", role = c("aut", "cre"))
 Description: Financial stuffs.
 Depends:
-    R (>= 3.3.0),plyr,xts,zoo
+    R (>= 3.3.0),zoo,xts,XML,RCurl,lubridate,reshape,gridExtra
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
