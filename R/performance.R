@@ -1,5 +1,4 @@
-#' returns from any index
-#' @export
+#' @export returns from any index
 ret_from_idx <- function(df){
   options(xts.compat.zoo.lag = TRUE)
   # df = df[complete.cases(df)]
@@ -9,8 +8,7 @@ ret_from_idx <- function(df){
   result
 }
 
-#' returns from to index, starting at 100
-#' @export
+#' @export returns from to index, starting at 100
 ret_to_idx <- function(df){
   options(xts.compat.zoo.lag = TRUE)
   df[is.na(df)] <- 0
@@ -51,6 +49,18 @@ rounder <- function(x, digits = 2) format(round(x, digits), nsmall = digits)
 
 #' replace NAs
 #' @export
+forceround2= function(n) (sprintf("%.2f", as.numeric(n)))
+
+#' force round to 1 decimals
+forceround1= function(n) (sprintf("%.1f", as.numeric(n)))
+
+#' force round to 0 decimals
+forceround0= function(n) (sprintf("%.0f", as.numeric(n)))
+
+#' round to n number of digits, 2 by default
+rounder <- function(x, digits = 2) format(round(x, digits), nsmall = digits)
+
+#' replace NAs
 naplace <- function(df, repl = 0){
   df2 = apply(df, 2, function(x) {x[is.na(x)] <- repl; x})
   reclass(df2, df)
@@ -886,8 +896,8 @@ contr_trade_op <- function(contr_trader){
   result = df[colnames(df)!= 'close' & colnames(df)!= 'name' & colnames(df)!= 'class']
   result
 }
-# print(contr_trade_op(test))
 
+# print(contr_trade_op(test))
 #' contribution by sector
 #' @export
 contr_sector <- function(contr_data){
@@ -1022,9 +1032,10 @@ contr_sector <- function(contr_data){
   blpDisconnect(conn)
   return(result)
 }
-
 #' contribution by security name
 #' @export
+
+
 contr_name <- function(df){
   result_temp<-df
   #result_temp<-contr('2012-12-31', '2013-09-30', 'SELECTV_S')
@@ -1046,9 +1057,10 @@ contr_name <- function(df){
   blpDisconnect(conn)
   return(result)
 }
-
 #' contribution by asset class
 #' @export
+
+
 contr_class <- function(dfer, classer = "Broad_Category_Group"){
   dfer = dfer[rownames(dfer)!= 'total', ]
   dfer = dfer[rownames(dfer)!= 'Total', ]
@@ -1066,9 +1078,10 @@ contr_class <- function(dfer, classer = "Broad_Category_Group"){
   colnames(result)<-c("Contribution", "Average Weight")
   result
 }
-
 #' contribution by benchmark for the ETF-based positions
 #' @export
+
+
 contr_bench_ETF <- function(start_date, end_date, eq_ret = composites$bench_rets_ETF_EQ[i], 
                             fi_ret = composites$bench_rets_ETF_FI[i], mkt_pct = composites$eq_pct[i], 
                             tickers = c(composites$bench_tickers_ETF_EQ[i], composites$bench_tickers_ETF_FI[i]),

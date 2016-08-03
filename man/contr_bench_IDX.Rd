@@ -2,7 +2,16 @@
 % Please edit documentation in R/performance.R
 \name{contr_bench_IDX}
 \alias{contr_bench_IDX}
+<<<<<<< HEAD
 \title{contribution by benchmark for the Index-based positions}
+=======
+\title{contribution by benchmark for the Index-based positions
+CRP_blend_contr <- contr_bench_IDX(start_date = "2009-12-31", 
+                                   end_date = "2013-12-31", 
+                                  eq_ret = "NDUEACWZ_rets", 
+                                  fi_ret = "BARCAPAGG_rets", mkt_pct = 0.6, 
+                                  tickers = c("NDUEACWZ", "LBUSTRUU"))}
+>>>>>>> 0141bdca41957c0ed83d1015909dcec4ca4138a5
 \usage{
 contr_bench_IDX(start_date, end_date,
   eq_ret = composites$bench_rets_IDX_EQ[i],
@@ -12,5 +21,13 @@ contr_bench_IDX(start_date, end_date,
 }
 \description{
 contribution by benchmark for the Index-based positions
+<<<<<<< HEAD
+=======
+CRP_blend_contr <- contr_bench_IDX(start_date = "2009-12-31", 
+                                   end_date = "2013-12-31", 
+                                  eq_ret = "NDUEACWZ_rets", 
+                                  fi_ret = "BARCAPAGG_rets", mkt_pct = 0.6, 
+                                  tickers = c("NDUEACWZ", "LBUSTRUU"))
+>>>>>>> 0141bdca41957c0ed83d1015909dcec4ca4138a5
 }
 
