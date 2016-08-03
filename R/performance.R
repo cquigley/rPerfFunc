@@ -1,4 +1,5 @@
-#' @export returns from any index
+#' returns from any index
+#' @export 
 ret_from_idx <- function(df){
   options(xts.compat.zoo.lag = TRUE)
   # df = df[complete.cases(df)]
@@ -8,7 +9,8 @@ ret_from_idx <- function(df){
   result
 }
 
-#' @export returns from to index, starting at 100
+#' returns from to index, starting at 100
+#' @export 
 ret_to_idx <- function(df){
   options(xts.compat.zoo.lag = TRUE)
   df[is.na(df)] <- 0
