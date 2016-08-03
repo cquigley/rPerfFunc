@@ -5,8 +5,12 @@
 \title{round to n number of digits, 2 by default}
 \usage{
 rounder(x, digits = 2)
+
+rounder(x, digits = 2)
 }
 \description{
+round to n number of digits, 2 by default
+
 round to n number of digits, 2 by default
 }
 
