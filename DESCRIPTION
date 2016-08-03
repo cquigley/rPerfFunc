@@ -1,0 +1,12 @@
+Package: rPerfFunc
+Title: Financial Performance Library
+Version: 0.0.1
+Authors@R: person("Christopher", "Quigley", email = "cquigley@outlook.com", role = c("aut", "cre"))
+Description: Financial stuffs.
+Depends:
+    R (>= 3.3.0),zoo,xts,XML,RCurl,lubridate,reshape,gridExtra
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+Suggests: testthat
