@@ -1,4 +1,4 @@
-#' returns from any index
+#' @export returns from any index
 
 ret_from_idx <- function(df){
   options(xts.compat.zoo.lag = TRUE)
@@ -9,7 +9,7 @@ ret_from_idx <- function(df){
   result
 }
 
-#' returns from to index, starting at 100
+#' @export returns from to index, starting at 100
 
 ret_to_idx <- function(df){
   options(xts.compat.zoo.lag = TRUE)
