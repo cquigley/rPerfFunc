@@ -1516,7 +1516,7 @@ contr_bench_IDX <- function(start_date, end_date, eq_ret = composites$bench_rets
 }
 
 #' contribution for a model portfolio
-contr_model <-   unction(vsn, start_date, end_date, modeler, custom_rets = NULL){
+contr_model <-   function(vsn, start_date, end_date, modeler, custom_rets = NULL){
     #   vsn = "IDX"
     #   modeler = "FI_BENCH_wgt"
     #   start_date = as.Date("2009-12-31")
